@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -158,10 +158,12 @@ MSOP&lt;br&gt;
 <pin name="SCL" x="15.24" y="-2.54" length="middle" rot="R180"/>
 <pin name="MFP" x="15.24" y="2.54" length="middle" rot="R180"/>
 <pin name="VCC" x="15.24" y="7.62" length="middle" rot="R180"/>
+<text x="-10.16" y="12.7" size="1.778" layer="94">&gt;NAME</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MCP7940N">
+<deviceset name="MCP7940N" prefix="IC">
 <description>Battery-Backed I2C™ Real-Time Clock/Calendar with SRAM
 
 www: http://www.microchip.com/wwwproducts/Devices.aspx?product=MCP7940M
@@ -229,19 +231,19 @@ contents. The times when the device switches over to
 the back-up supply and when primary power returns
 are both logged by the power-fail time-stamp.</description>
 <gates>
-<gate name="G$1" symbol="MCP7940N" x="0" y="0"/>
+<gate name="&gt;NAME" symbol="MCP7940N" x="0" y="0"/>
 </gates>
 <devices>
 <device name="MSOP8" package="MSOP8">
 <connects>
-<connect gate="G$1" pin="MFP" pad="7"/>
-<connect gate="G$1" pin="SCL" pad="6"/>
-<connect gate="G$1" pin="SDA" pad="5"/>
-<connect gate="G$1" pin="VBAT" pad="3"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-<connect gate="G$1" pin="VSS" pad="4"/>
-<connect gate="G$1" pin="X1" pad="1"/>
-<connect gate="G$1" pin="X2" pad="2"/>
+<connect gate="&gt;NAME" pin="MFP" pad="7"/>
+<connect gate="&gt;NAME" pin="SCL" pad="6"/>
+<connect gate="&gt;NAME" pin="SDA" pad="5"/>
+<connect gate="&gt;NAME" pin="VBAT" pad="3"/>
+<connect gate="&gt;NAME" pin="VCC" pad="8"/>
+<connect gate="&gt;NAME" pin="VSS" pad="4"/>
+<connect gate="&gt;NAME" pin="X1" pad="1"/>
+<connect gate="&gt;NAME" pin="X2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -251,14 +253,14 @@ are both logged by the power-fail time-stamp.</description>
 </device>
 <device name="SOIC8" package="SOIC8">
 <connects>
-<connect gate="G$1" pin="MFP" pad="7"/>
-<connect gate="G$1" pin="SCL" pad="6"/>
-<connect gate="G$1" pin="SDA" pad="5"/>
-<connect gate="G$1" pin="VBAT" pad="3"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-<connect gate="G$1" pin="VSS" pad="4"/>
-<connect gate="G$1" pin="X1" pad="1"/>
-<connect gate="G$1" pin="X2" pad="2"/>
+<connect gate="&gt;NAME" pin="MFP" pad="7"/>
+<connect gate="&gt;NAME" pin="SCL" pad="6"/>
+<connect gate="&gt;NAME" pin="SDA" pad="5"/>
+<connect gate="&gt;NAME" pin="VBAT" pad="3"/>
+<connect gate="&gt;NAME" pin="VCC" pad="8"/>
+<connect gate="&gt;NAME" pin="VSS" pad="4"/>
+<connect gate="&gt;NAME" pin="X1" pad="1"/>
+<connect gate="&gt;NAME" pin="X2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
